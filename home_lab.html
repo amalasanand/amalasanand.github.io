@@ -1,25 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Home Lab</title>
+  <meta charset="UTF-8">
+  <title>Learning Phase 2: Building Your First Home Lab</title>
 </head>
 <body>
-  <h1>My Cybersecurity Home Lab</h1>
-  <ul>
-    <li><a href="blog.html">Blog</a></li>
-    <li><a href="about.html">About Me</a></li>
-    <li><a href="index.html">Home</a></li>
-  </ul>
 
-  <h2>Tools I Used</h2>
-  <ul>
-    <li>VirtualBox</li>
-    <li>Kali Linux</li>
-    <li>Windows 10</li>
-    <li>Splunk, Wireshark, Sysmon</li>
-  </ul>
+  <h1>Manifesting to be a SOC Analyst – Learning Phase 2</h1>
+  <h2>🛠️ Building Your First Home Lab</h2>
 
-  <h2>What I Did</h2>
-  <p>I created a virtual network, simulated malware attacks, and analyzed them with Splunk.</p>
+  <p>After understanding the fundamentals of what a SOC Analyst does in Phase 1, it's time to move from theory to practice. In this phase, we'll focus on creating a virtual home lab where you can safely simulate, analyze, and respond to cybersecurity incidents.</p>
+
+  <p>Why build a home lab? Because it gives you hands-on experience with tools like Splunk, Wireshark, and Sysmon without risking your main system. It's also the best way to practice incident triage, threat detection, and log analysis—skills every SOC Analyst needs.</p>
+
+  <p><strong>🔧 What You’ll Need:</strong></p>
+  <p>- A computer with at least 8GB RAM (16GB recommended)</p>
+  <p>- Virtualization software: <strong>VirtualBox</strong> (free)</p>
+  <p>- OS ISOs: <strong>Windows 10</strong> and <strong>Kali Linux</strong></p>
+
+  <p><strong>🖥️ Setting Up Virtual Machines:</strong></p>
+  <p>Install VirtualBox and create two VMs: one for Windows (victim) and one for Kali Linux (attacker). Ensure you set them up in an internal network mode so they can communicate with each other.</p>
+
+  <p><strong>🔍 Tools to Install in Windows VM:</strong></p>
+  <p>- Sysmon (system monitoring)</p>
+  <p>- Splunk (free version for log analysis)</p>
+  <p>- Microsoft Defender or any AV</p>
+
+  <p><strong>💻 Tools in Kali Linux:</strong></p>
+  <p>- Nmap, Wireshark, Metasploit, etc., for simulating attacks</p>
+
+  <p><strong>🧪 Sample Activities:</strong></p>
+  <p>- Generate failed login attempts and observe Sysmon logs</p>
+  <p>- Run a basic scan from Kali using Nmap and detect it in Splunk</p>
+  <p>- Simulate file changes or registry edits and see how they're logged</p>
+
+  <p><strong>⚠️ Lab Safety Tips:</strong></p>
+  <p>- Never connect your Kali VM to the internet unless needed and safe</p>
+  <p>- Use snapshots before testing malware or exploits</p>
+  <p>- Keep your testing network isolated</p>
+
+  <p><strong>✅ Outcome of Phase 2:</strong></p>
+  <p>By the end of this phase, you'll have a functioning home lab and practical experience analyzing security events. This is your mini SOC environment where you can practice what real analysts do!</p>
+
+  <p>Next in Phase 3, we’ll look into log analysis techniques and writing your first detection rules.</p>
+
+  <div style="margin-top: 20px;">
+    <a href="soc-phase1.html">⬅ Previous</a>
+    <a href="soc-phase3.html">Next ➜</a>
+  </div>
+
 </body>
 </html>
+
